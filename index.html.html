@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Free Webinar for Nigerian Parents in the UK — How to Support Your Child Through Exam Season. Join our WhatsApp Community. Limited spots.">
+<title>Free Webinar — How to Support Your Child Through Exam Season | Schoolhelphub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,700;1,900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --g:     #005A32;
+  --gm:    #007A45;
+  --gd:    #003D22;
+  --gl:    #E6F2EB;
+  --gf:    #F2FAF5;
+  --y:     #FFCE2E;
+  --yd:    #E8B800;
+  --ys:    #FFFBEA;
+  --red:   #E63946;
+  --cream: #FDFCF8;
+  --ink:   #0C1A0E;
+  --muted: #4A6350;
+  --white: #FFFFFF;
+  --border:#D4E6DA;
+  --wa:    #25D366;
+}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+strong{font-weight:700}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.6);opacity:.5}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.4)}70%{box-shadow:0 0 0 14px rgba(37,211,102,0)}}
+
+.a1{animation:fadeUp .65s .0s both}
+.a2{animation:fadeUp .65s .1s both}
+.a3{animation:fadeUp .65s .2s both}
+.a4{animation:fadeUp .65s .32s both}
+
+/* ══════════════════════════════════
+   ALERT BANNER
+══════════════════════════════════ */
+.alert-bar{
+  background:var(--red);padding:10px 24px;text-align:center;
+  display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;
+}
+.alert-dot{width:7px;height:7px;background:white;border-radius:50%;animation:pulse 1.5s infinite;flex-shrink:0}
+.alert-text{color:white;font-size:13px;font-weight:600}
+.alert-text strong{font-weight:800}
+.alert-pill{
+  background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.35);
+  color:white;font-size:10px;font-weight:800;padding:4px 12px;
+  border-radius:100px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;
+}
+
+/* ══════════════════════════════════
+   NAV
+══════════════════════════════════ */
+.nav{
+  background:var(--gd);
+  padding:0 48px;height:68px;
+  display:flex;align-items:center;justify-content:space-between;
+  border-bottom:2px solid rgba(255,206,46,.15);
+  position:sticky;top:0;z-index:999;
+  box-shadow:0 2px 20px rgba(0,0,0,.3);
+}
+.brand{display:flex;align-items:center;gap:10px}
+.brand-logo{
+  background:var(--y);border-radius:10px;
+  padding:6px 14px;
+  font-family:'Fraunces',serif;font-weight:900;font-size:14px;
+  color:var(--gd);letter-spacing:.02em;white-space:nowrap;
+}
+.brand-tagline{
+  color:rgba(255,255,255,.45);font-size:11px;font-weight:400;
+  border-left:1px solid rgba(255,255,255,.15);padding-left:10px;
+  display:none;
+}
+@media(min-width:600px){.brand-tagline{display:block}}
+.nav-cta{
+  display:flex;align-items:center;gap:7px;
+  background:var(--wa);color:white;
+  font-weight:700;font-size:13px;padding:9px 18px;
+  border-radius:8px;white-space:nowrap;
+  animation:glow 2.5s infinite;transition:all .2s;
+}
+.nav-cta:hover{background:#20b858;transform:translateY(-1px)}
+.nav-dot{width:7px;height:7px;background:white;border-radius:50%;animation:pulse 1.8s infinite}
+
+/* ══════════════════════════════════
+   HERO
+══════════════════════════════════ */
+.hero{
+  background:var(--gd);
+  position:relative;overflow:hidden;
+  padding:72px 48px 80px;
+}
+.hero-bg-grid{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
+  background-size:52px 52px;pointer-events:none;
+}
+.hero-orb{
+  position:absolute;width:800px;height:800px;border-radius:50%;
+  background:radial-gradient(circle,rgba(0,122,69,.28) 0%,transparent 68%);
+  top:-300px;right:-300px;pointer-events:none;
+}
+.hero-inner{
+  max-width:820px;margin:0 auto;
+  position:relative;z-index:2;text-align:center;
+}
+
+/* Free tag */
+.free-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,206,46,.12);border:1.5px solid rgba(255,206,46,.3);
+  color:var(--y);font-size:11px;font-weight:800;
+  letter-spacing:.14em;text-transform:uppercase;
+  padding:8px 20px;border-radius:100px;margin-bottom:24px;
+}
+.free-tag-dot{width:6px;height:6px;background:var(--y);border-radius:50%;animation:pulse 2s infinite}
+
+/* Headline */
+.hero-h1{
+  font-family:'Fraunces',serif;
+  font-size:58px;font-weight:900;line-height:1.06;
+  color:var(--white);margin-bottom:16px;letter-spacing:-1.5px;
+}
+.hero-h1 em{font-style:italic;color:var(--y)}
+.hero-h1 .underline-wrap{
+  position:relative;display:inline-block;
+}
+.hero-h1 .underline-wrap::after{
+  content:'';position:absolute;
+  bottom:-4px;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--y),var(--gm));
+  border-radius:2px;
+}
+
+/* Subheadline */
+.hero-sub{
+  font-size:19px;font-weight:400;line-height:1.65;
+  color:rgba(255,255,255,.72);
+  max-width:680px;margin:0 auto 28px;
+}
+.hero-sub strong{color:white;font-weight:700}
+.hero-sub .highlight{
+  background:rgba(255,206,46,.15);
+  border:1px solid rgba(255,206,46,.25);
+  color:var(--y);padding:2px 8px;border-radius:5px;
+  font-weight:700;
+}
+
+/* Social proof bar */
+.social-proof-bar{
+  display:flex;align-items:center;justify-content:center;gap:16px;
+  margin-bottom:32px;flex-wrap:wrap;
+}
+.sp-avatars{display:flex}
+.sp-av{
+  width:34px;height:34px;border-radius:50%;
+  border:2px solid var(--gd);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Fraunces',serif;font-weight:700;font-size:12px;color:white;
+  margin-right:-8px;flex-shrink:0;
+}
+.sp-text{font-size:13px;color:rgba(255,255,255,.65);font-weight:500}
+.sp-text strong{color:white}
+.sp-divider{width:1px;height:20px;background:rgba(255,255,255,.15)}
+.sp-stars{color:var(--y);font-size:14px;letter-spacing:1px}
+.sp-rating{font-size:13px;color:rgba(255,255,255,.65)}
+
+/* Event details */
+.event-strip{
+  display:flex;align-items:center;justify-content:center;
+  gap:0;margin-bottom:32px;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
+  border-radius:14px;padding:16px 24px;flex-wrap:wrap;
+  max-width:700px;margin-left:auto;margin-right:auto;margin-bottom:32px;
+}
+.ev-item{
+  display:flex;align-items:center;gap:8px;
+  padding:6px 20px;position:relative;
+}
+.ev-item+.ev-item::before{
+  content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);
+  width:1px;height:20px;background:rgba(255,255,255,.12);
+}
+.ev-icon{font-size:16px}
+.ev-text{font-size:13px;font-weight:600;color:rgba(255,255,255,.85)}
+.ev-label{font-size:10px;color:rgba(255,255,255,.38);display:block;margin-bottom:1px}
+
+/* Hero CTA */
+.hero-cta-wrap{display:flex;flex-direction:column;align-items:center;gap:12px}
+.btn-wa-hero{
+  display:inline-flex;align-items:center;gap:14px;
+  background:var(--wa);color:white;
+  font-weight:800;font-size:18px;padding:20px 44px;
+  border-radius:16px;letter-spacing:.01em;
+  box-shadow:0 8px 32px rgba(37,211,102,.4);
+  transition:all .25s;animation:glow 2.5s infinite;
+  position:relative;overflow:hidden;
+}
+.btn-wa-hero::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(255,255,255,.1),transparent);
+  pointer-events:none;
+}
+.btn-wa-hero:hover{transform:translateY(-3px);box-shadow:0 14px 48px rgba(37,211,102,.55)}
+.wa-btn-icon{font-size:26px;flex-shrink:0}
+.wa-btn-label{text-align:left}
+.wa-btn-main{display:block;font-size:17px;font-weight:800}
+.wa-btn-sub{display:block;font-size:12px;color:rgba(255,255,255,.75);font-weight:400;margin-top:1px}
+.hero-note{
+  color:rgba(255,255,255,.35);font-size:12px;
+  display:flex;align-items:center;gap:6px;
+}
+.hero-note-dot{width:5px;height:5px;background:var(--wa);border-radius:50%}
+
+/* ══════════════════════════════════
+   COUNTDOWN
+══════════════════════════════════ */
+.cd-sec{
+  background:var(--g);padding:24px 48px;
+  display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap;
+  border-bottom:1px solid rgba(255,206,46,.1);
+}
+.cd-label{color:rgba(255,255,255,.6);font-size:13px;font-weight:500;white-space:nowrap}
+.cd-units{display:flex;align-items:center;gap:4px}
+.cd-unit{text-align:center;min-width:60px}
+.cd-num{
+  font-family:'Fraunces',serif;font-size:42px;font-weight:900;
+  color:var(--y);line-height:1;display:block;
+}
+.cd-lbl{font-size:9px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.1em;margin-top:3px}
+.cd-sep{font-size:28px;font-weight:900;color:rgba(255,206,46,.35);padding:0 2px;margin-bottom:14px}
+
+/* ══════════════════════════════════
+   TICKER
+══════════════════════════════════ */
+.ticker{background:var(--y);padding:10px 0;overflow:hidden}
+.ticker-inner{display:flex;white-space:nowrap;animation:marquee 20s linear infinite}
+.ticker-item{
+  display:inline-flex;align-items:center;gap:10px;padding:0 24px;
+  font-size:12px;font-weight:800;color:var(--gd);
+  letter-spacing:.04em;text-transform:uppercase;
+}
+.t-sep{opacity:.3;font-size:14px}
+
+/* ══════════════════════════════════
+   SECTION SHARED
+══════════════════════════════════ */
+.sec{padding:72px 48px}
+.mw{max-width:1040px;margin:0 auto}
+.sec-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--gl);color:var(--g);
+  font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+  padding:6px 14px;border-radius:100px;margin-bottom:12px;
+}
+.sec-eyebrow-line{width:16px;height:1.5px;background:var(--g)}
+.sec-h2{
+  font-family:'Fraunces',serif;
+  font-size:40px;font-weight:900;color:var(--gd);
+  line-height:1.1;margin-bottom:12px;letter-spacing:-.5px;
+}
+.sec-h2 em{font-style:italic;color:var(--gm)}
+.sec-body{font-size:15px;color:var(--muted);line-height:1.75;font-weight:300}
+.center{text-align:center}
+.center .sec-eyebrow{margin-left:auto;margin-right:auto;display:flex;width:fit-content}
+.center .sec-body{max-width:580px;margin:0 auto}
+
+/* ══════════════════════════════════
+   PAIN SECTION
+══════════════════════════════════ */
+.pain-sec{background:var(--white)}
+.pain-inner{
+  display:grid;grid-template-columns:1fr 1fr;gap:64px;
+  align-items:start;
+}
+.pain-questions{display:flex;flex-direction:column;gap:10px;margin-top:24px}
+.pq-item{
+  display:flex;align-items:flex-start;gap:12px;
+  background:var(--gf);border:1.5px solid var(--border);
+  border-radius:12px;padding:16px 18px;transition:all .3s;
+}
+.pq-item:hover{border-color:var(--gm);transform:translateX(4px)}
+.pq-icon{font-size:18px;flex-shrink:0;margin-top:1px}
+.pq-text{font-size:14px;color:var(--ink);line-height:1.55;font-weight:500}
+.pq-text span{color:var(--gm);font-weight:700}
+
+.solution-card{
+  background:var(--gd);border-radius:22px;padding:32px;
+  box-shadow:0 20px 60px rgba(0,61,34,.2);
+}
+.sol-eyebrow{
+  display:inline-block;background:rgba(255,206,46,.15);
+  border:1px solid rgba(255,206,46,.25);
+  color:var(--y);font-size:10px;font-weight:800;
+  padding:5px 13px;border-radius:100px;
+  letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px;
+}
+.sol-h3{
+  font-family:'Fraunces',serif;font-size:24px;font-weight:900;
+  color:white;margin-bottom:20px;line-height:1.25;
+}
+.sol-items{display:flex;flex-direction:column;gap:11px;margin-bottom:24px}
+.sol-item{
+  display:flex;align-items:flex-start;gap:10px;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);
+  border-radius:11px;padding:13px 15px;
+}
+.sol-check{
+  width:22px;height:22px;border-radius:50%;flex-shrink:0;
+  background:rgba(255,206,46,.15);border:1px solid rgba(255,206,46,.3);
+  display:flex;align-items:center;justify-content:center;
+  font-size:10px;color:var(--y);font-weight:800;margin-top:1px;
+}
+.sol-tx{font-size:13px;color:rgba(255,255,255,.82);line-height:1.55}
+.sol-tx strong{color:white;font-weight:700}
+.sol-wa{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--wa);color:white;font-weight:800;font-size:15px;
+  padding:15px;border-radius:12px;
+  box-shadow:0 6px 22px rgba(37,211,102,.35);transition:all .25s;
+}
+.sol-wa:hover{background:#20b858;transform:translateY(-2px)}
+
+/* ══════════════════════════════════
+   LEARN SECTION
+══════════════════════════════════ */
+.learn-sec{background:var(--gf)}
+.learn-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:40px}
+.learn-card{
+  background:var(--white);border:1.5px solid var(--border);
+  border-radius:16px;padding:22px;
+  display:flex;align-items:flex-start;gap:14px;
+  transition:all .3s;position:relative;overflow:hidden;
+}
+.learn-card::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:var(--g);border-radius:0 2px 2px 0;
+}
+.learn-card:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(0,90,50,.1);border-color:rgba(0,90,50,.2)}
+.learn-num{
+  width:34px;height:34px;border-radius:10px;flex-shrink:0;
+  background:var(--g);color:var(--y);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Fraunces',serif;font-size:16px;font-weight:900;
+}
+.learn-t{font-size:14px;font-weight:700;color:var(--gd);margin-bottom:4px}
+.learn-d{font-size:12px;color:var(--muted);line-height:1.6;font-weight:300}
+
+.bonus-strip{
+  background:var(--ys);border:2px solid rgba(255,206,46,.35);
+  border-radius:16px;padding:22px 26px;margin-top:20px;
+  display:flex;align-items:flex-start;gap:16px;
+}
+.bonus-ic{font-size:32px;flex-shrink:0}
+.bonus-tag{
+  display:inline-block;background:var(--y);color:var(--gd);
+  font-size:9px;font-weight:800;padding:3px 10px;border-radius:100px;
+  margin-bottom:6px;letter-spacing:.08em;text-transform:uppercase;
+}
+.bonus-title{font-size:15px;font-weight:700;color:var(--gd);margin-bottom:4px}
+.bonus-desc{font-size:13px;color:var(--muted);line-height:1.6;font-weight:300}
+
+/* ══════════════════════════════════
+   WHO IS THIS FOR
+══════════════════════════════════ */
+.who-sec{background:var(--white)}
+.who-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px}
+.who-card{
+  background:var(--gf);border:1.5px solid var(--border);
+  border-radius:14px;padding:18px 20px;
+  display:flex;align-items:flex-start;gap:12px;
+  transition:all .3s;
+}
+.who-card:hover{background:var(--gl);border-color:var(--gm)}
+.who-check{
+  width:24px;height:24px;border-radius:50%;flex-shrink:0;
+  background:var(--g);color:var(--y);
+  display:flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:800;margin-top:1px;
+}
+.who-t{font-size:14px;font-weight:700;color:var(--gd);margin-bottom:3px}
+.who-d{font-size:12px;color:var(--muted);line-height:1.5;font-weight:300}
+
+/* ══════════════════════════════════
+   ABOUT
+══════════════════════════════════ */
+.about-sec{background:var(--gd);position:relative;overflow:hidden}
+.about-pat{
+  position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
+  background-size:40px 40px;pointer-events:none;
+}
+.about-glow{
+  position:absolute;width:500px;height:500px;border-radius:50%;
+  background:radial-gradient(circle,rgba(0,122,69,.25) 0%,transparent 70%);
+  bottom:-150px;right:-100px;pointer-events:none;
+}
+.about-inner{
+  display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;
+  align-items:center;position:relative;z-index:1;
+}
+.about-left{}
+.about-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,206,46,.1);border:1px solid rgba(255,206,46,.2);
+  color:var(--y);font-size:10px;font-weight:800;
+  letter-spacing:.14em;text-transform:uppercase;
+  padding:6px 14px;border-radius:100px;margin-bottom:14px;
+}
+.about-eyebrow-line{width:16px;height:1.5px;background:var(--y)}
+.about-h2{
+  font-family:'Fraunces',serif;font-size:38px;font-weight:900;
+  color:white;line-height:1.1;margin-bottom:14px;letter-spacing:-.4px;
+}
+.about-h2 em{font-style:italic;color:var(--y)}
+.about-body{font-size:14px;color:rgba(255,255,255,.6);line-height:1.8;font-weight:300;margin-bottom:20px}
+.about-stats{display:flex;gap:28px;flex-wrap:wrap;margin-bottom:24px}
+.about-stat{}
+.about-stat-num{
+  font-family:'Fraunces',serif;font-size:36px;font-weight:900;
+  color:var(--y);line-height:1;
+}
+.about-stat-label{font-size:11px;color:rgba(255,255,255,.45);margin-top:3px;font-weight:400}
+.about-platforms{display:flex;flex-wrap:wrap;gap:8px}
+.platform-pill{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
+  color:rgba(255,255,255,.7);font-size:11px;font-weight:600;
+  padding:6px 14px;border-radius:100px;transition:all .25s;
+}
+.platform-pill:hover{background:rgba(255,206,46,.1);border-color:rgba(255,206,46,.25);color:var(--y)}
+
+.about-right{}
+.about-card{
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
+  border-radius:22px;padding:32px;backdrop-filter:blur(10px);
+}
+.about-card-header{display:flex;align-items:center;gap:16px;margin-bottom:24px}
+.about-avatar{
+  width:72px;height:72px;border-radius:18px;
+  background:linear-gradient(135deg,var(--g),var(--y));
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Fraunces',serif;font-size:28px;font-weight:900;color:white;
+  flex-shrink:0;border:3px solid rgba(255,206,46,.3);
+}
+.about-name{
+  font-family:'Fraunces',serif;font-size:22px;font-weight:900;color:white;
+}
+.about-role{font-size:13px;color:rgba(255,255,255,.5);margin-top:3px}
+.about-verified{
+  display:inline-flex;align-items:center;gap:5px;
+  background:rgba(37,211,102,.12);border:1px solid rgba(37,211,102,.25);
+  color:#5DD88A;font-size:10px;font-weight:700;
+  padding:3px 10px;border-radius:100px;margin-top:6px;
+}
+.about-quote{
+  font-size:14px;color:rgba(255,255,255,.75);line-height:1.75;
+  font-style:italic;margin-bottom:20px;
+  border-left:3px solid var(--y);padding-left:16px;
+}
+.about-creds{display:flex;flex-direction:column;gap:10px}
+.about-cred{
+  display:flex;align-items:flex-start;gap:10px;
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);
+  border-radius:11px;padding:12px 14px;
+}
+.cred-icon{font-size:16px;flex-shrink:0;margin-top:1px}
+.cred-text{font-size:12px;color:rgba(255,255,255,.65);line-height:1.5;font-weight:400}
+.cred-text strong{color:white;font-weight:700}
+
+/* ══════════════════════════════════
+   TESTIMONIALS
+══════════════════════════════════ */
+.testi-sec{background:var(--gl)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.testi-card{
+  background:var(--white);border-radius:18px;padding:26px;
+  box-shadow:0 2px 14px rgba(0,90,50,.07);border:1.5px solid rgba(0,90,50,.06);
+  transition:all .3s;
+}
+.testi-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,90,50,.12)}
+.qm{font-family:'Fraunces',serif;font-size:60px;line-height:.7;color:var(--y);display:block;opacity:.7;margin-bottom:4px}
+.stars{color:var(--y);font-size:13px;letter-spacing:2px;display:block;margin-bottom:12px}
+.testi-tx{font-size:13px;color:var(--ink);line-height:1.75;margin-bottom:18px;font-weight:400}
+.testi-tx .highlight-txt{
+  background:rgba(0,90,50,.08);color:var(--gd);
+  font-weight:700;padding:1px 6px;border-radius:4px;
+}
+.testi-author{display:flex;align-items:center;gap:10px;padding-top:14px;border-top:1px solid var(--gf)}
+.t-av{
+  width:36px;height:36px;border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Fraunces',serif;font-weight:700;font-size:14px;color:white;flex-shrink:0;
+}
+.t-name{font-size:13px;font-weight:700;color:var(--gd)}
+.t-role{font-size:11px;color:var(--muted);margin-top:1px}
+
+/* ══════════════════════════════════
+   FINAL CTA
+══════════════════════════════════ */
+.cta-sec{
+  background:var(--gd);padding:90px 48px;
+  text-align:center;position:relative;overflow:hidden;
+}
+.cta-glow{
+  position:absolute;width:700px;height:700px;border-radius:50%;
+  background:radial-gradient(circle,rgba(37,211,102,.06) 0%,transparent 70%);
+  top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;
+}
+.cta-leaf{position:absolute;width:180px;height:180px;border:1px solid rgba(255,206,46,.08);border-radius:50% 0 50% 0;bottom:-50px;left:60px;transform:rotate(45deg)}
+.cta-leaf2{position:absolute;width:100px;height:100px;border:1px solid rgba(255,255,255,.05);border-radius:50% 0 50% 0;top:40px;right:100px;transform:rotate(20deg)}
+
+.cta-warning{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(230,57,70,.12);border:1px solid rgba(230,57,70,.25);
+  color:#FF8C8C;font-size:12px;font-weight:700;
+  padding:8px 18px;border-radius:100px;margin-bottom:20px;letter-spacing:.04em;
+}
+.cta-w-dot{width:6px;height:6px;background:var(--red);border-radius:50%;animation:pulse 1.5s infinite}
+
+.cta-h2{
+  font-family:'Fraunces',serif;font-size:50px;font-weight:900;
+  color:white;margin-bottom:12px;position:relative;line-height:1.08;letter-spacing:-.6px;
+}
+.cta-h2 em{color:var(--y);font-style:italic}
+.cta-sub{
+  color:rgba(255,255,255,.55);font-size:15px;
+  margin-bottom:36px;position:relative;font-weight:300;
+  max-width:500px;margin-left:auto;margin-right:auto;line-height:1.72;
+}
+.cta-actions{display:flex;flex-direction:column;align-items:center;gap:12px;position:relative}
+.cta-wa-btn{
+  display:inline-flex;align-items:center;gap:14px;
+  background:var(--wa);color:white;
+  font-weight:800;font-size:18px;padding:20px 48px;
+  border-radius:16px;box-shadow:0 8px 32px rgba(37,211,102,.4);
+  transition:all .25s;animation:glow 2.5s infinite;
+}
+.cta-wa-btn:hover{transform:translateY(-3px);box-shadow:0 14px 48px rgba(37,211,102,.55)}
+.cta-email{color:rgba(255,255,255,.42);font-size:13px;display:flex;align-items:center;gap:5px;transition:color .2s}
+.cta-email:hover{color:var(--y)}
+.cta-note{color:rgba(255,255,255,.25);font-size:12px}
+
+/* ══════════════════════════════════
+   CONTACT STRIP
+══════════════════════════════════ */
+.contact-strip{
+  background:rgba(0,0,0,.15);padding:22px 48px;background:var(--gd);
+  display:flex;align-items:center;justify-content:center;gap:48px;flex-wrap:wrap;
+  border-top:1px solid rgba(255,255,255,.05);
+}
+.cs-item{display:flex;align-items:center;gap:9px}
+.cs-ic{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px}
+.cs-ic.g{background:rgba(37,211,102,.14)}
+.cs-ic.y{background:rgba(255,206,46,.1)}
+.cs-label{font-size:10px;color:rgba(255,255,255,.32);margin-bottom:1px}
+.cs-val{font-size:13px;color:rgba(255,255,255,.72);font-weight:500}
+.cs-val a{color:inherit;transition:color .2s}
+.cs-val a:hover{color:var(--y)}
+
+/* ══════════════════════════════════
+   FOOTER
+══════════════════════════════════ */
+footer{
+  background:var(--gd);padding:26px 48px;
+  border-top:1px solid rgba(255,255,255,.05);position:relative;
+}
+footer::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--g),var(--y),var(--g))}
+.footer-inner{
+  max-width:1040px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;
+}
+.footer-copy{color:rgba(255,255,255,.2);font-size:12px}
+.footer-links{display:flex;gap:20px}
+.footer-links a{color:rgba(255,255,255,.3);font-size:12px;transition:color .2s}
+.footer-links a:hover{color:var(--y)}
+
+/* WhatsApp FAB */
+.wa-fab{
+  position:fixed;bottom:24px;right:24px;z-index:1000;
+  width:56px;height:56px;background:var(--wa);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-size:26px;
+  box-shadow:0 6px 22px rgba(37,211,102,.45);transition:all .3s;
+  animation:glow 2.5s infinite;
+}
+.wa-fab:hover{transform:scale(1.1)}
+
+/* ══════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════ */
+@media(max-width:900px){
+  .nav{padding:0 16px}
+  .hero{padding:52px 20px 60px}
+  .hero-h1{font-size:38px}
+  .hero-sub{font-size:16px}
+  .btn-wa-hero{font-size:15px;padding:16px 24px}
+  .ev-item{padding:5px 12px}
+  .pain-inner{grid-template-columns:1fr;gap:32px}
+  .learn-grid{grid-template-columns:1fr}
+  .who-grid{grid-template-columns:1fr}
+  .about-inner{grid-template-columns:1fr;gap:36px}
+  .testi-grid{grid-template-columns:1fr}
+  .cta-h2{font-size:34px}
+  .cta-wa-btn{font-size:15px;padding:16px 28px}
+  .contact-strip{gap:20px;padding:20px}
+  .cd-sec{padding:18px 20px;gap:16px}
+  .sec{padding:56px 20px}
+  .about-stats{gap:20px}
+}
+</style>
+</head>
+<body>
+
+<!-- WhatsApp FAB -->
+<a href="https://chat.whatsapp.com/YOUR_GROUP_LINK_HERE" class="wa-fab" target="_blank" rel="noopener" title="Join our WhatsApp Community">💬</a>
+
+<!-- ══════════ ALERT BANNER ══════════ -->
+<div class="alert-bar">
+  <span class="alert-dot"></span>
+  <span class="alert-text">⏰ <strong>Exams are approaching.</strong> Secure your free spot before spaces fill up.</span>
+  <span class="alert-pill">🇬🇧 UK Parents Only</span>
+</div>
+
+<!-- ══════════ NAV ══════════ -->
+<nav>
+  <div class="brand">
+    <div class="brand-logo">Schoolhelphub</div>
+    <div class="brand-tagline">Expert Online Tutoring · Globally</div>
+  </div>
+  <a href="https://chat.whatsapp.com/YOUR_GROUP_LINK_HERE" class="nav-cta" target="_blank" rel="noopener">
+    <span class="nav-dot"></span>
+    💬 Join Free Community
+  </a>
+</nav>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-orb"></div>
+  <div class="hero-inner">
+
+    <div class="free-tag a1">
+      <span class="free-tag-dot"></span>
+      🎓 Free Live Webinar · 🇬🇧 UK Parents · Limited Spots
+    </div>
+
+    <h1 class="hero-h1 a2">
+      Is Your Child Ready<br>
+      for <em>Exam Season</em> —<br>
+      or Just <span class="underline-wrap">Hoping for the Best?</span>
+    </h1>
+
+    <p class="hero-sub a3">
+      Join <strong>Miss Sharon Ojo</strong> — an educator with <strong>21 years of experience</strong> — for a free live session built specifically for <span class="highlight">Nigerian parents raising children in the UK</span>. Walk away with a <strong>clear, practical plan</strong> to support your child through 11+, GCSE and SAT exams — starting this week.
+    </p>
+
+    <!-- Social proof -->
+    <div class="social-proof-bar a3">
+      <div class="sp-avatars">
+        <div class="sp-av" style="background:linear-gradient(135deg,#005A32,#007A45)">A</div>
+        <div class="sp-av" style="background:linear-gradient(135deg,#FFCE2E,#E6B800);color:#003D22">F</div>
+        <div class="sp-av" style="background:linear-gradient(135deg,#003D22,#005A32)">T</div>
+        <div class="sp-av" style="background:linear-gradient(135deg,#007A45,#005A32)">B</div>
+        <div class="sp-av" style="background:linear-gradient(135deg,#E8B800,#FFCE2E);color:#003D22">C</div>
+      </div>
+      <span class="sp-text"><strong>200+ parents</strong> already registered</span>
+      <div class="sp-divider"></div>
+      <div class="sp-stars">★★★★★</div>
+      <span class="sp-rating">4.9/5 from past sessions</span>
+    </div>
+
+    <!-- Event strip -->
+    <div class="event-strip a3">
+      <div class="ev-item">
+        <div class="ev-icon">📅</div>
+        <div>
+          <span class="ev-label">When</span>
+          <span class="ev-text">Coming in 2–4 weeks</span>
+        </div>
+      </div>
+      <div class="ev-item">
+        <div class="ev-icon">⏱️</div>
+        <div>
+          <span class="ev-label">Duration</span>
+          <span class="ev-text">45 mins + Live Q&A</span>
+        </div>
+      </div>
+      <div class="ev-item">
+        <div class="ev-icon">💻</div>
+        <div>
+          <span class="ev-label">Platform</span>
+          <span class="ev-text">Zoom — link in WhatsApp</span>
+        </div>
+      </div>
+      <div class="ev-item">
+        <div class="ev-icon">💷</div>
+        <div>
+          <span class="ev-label">Cost</span>
+          <span class="ev-text">Completely Free</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="hero-cta-wrap a4">
+      <a href="https://chat.whatsapp.com/YOUR_GROUP_LINK_HERE" class="btn-wa-hero" target="_blank" rel="noopener">
+        <span class="wa-btn-icon">💬</span>
+        <div class="wa-btn-label">
+          <span class="wa-btn-main">Join Our Free WhatsApp Community</span>
+          <span class="wa-btn-sub">Get the Zoom link + exam tips + free resources instantly</span>
+        </div>
+      </a>
+      <div class="hero-note">
+        <span class="hero-note-dot"></span>
+        Free to join · No payment · Leave anytime · Webinar link sent inside the group
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ COUNTDOWN ══════════ -->
+<div class="cd-sec">
+  <div class="cd-label">⏰ Webinar starts in approximately</div>
+  <div class="cd-units">
+    <div class="cd-unit"><span class="cd-num" id="cd-d">21</span><div class="cd-lbl">Days</div></div>
+    <div class="cd-sep">:</div>
+    <div class="cd-unit"><span class="cd-num" id="cd-h">00</span><div class="cd-lbl">Hours</div></div>
+    <div class="cd-sep">:</div>
+    <div class="cd-unit"><span class="cd-num" id="cd-m">00</span><div class="cd-lbl">Mins</div></div>
+    <div class="cd-sep">:</div>
+    <div class="cd-unit"><span class="cd-num" id="cd-s">00</span><div class="cd-lbl">Secs</div></div>
+  </div>
+</div>
+
+<!-- ══════════ TICKER ══════════ -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ticker-item">🎓 Free for UK Parents <span class="t-sep">·</span></span>
+    <span class="ticker-item">📋 Practical Exam Tips <span class="t-sep">·</span></span>
+    <span class="ticker-item">🏆 11+ · GCSE · SAT <span class="t-sep">·</span></span>
+    <span class="ticker-item">💬 Join WhatsApp Community <span class="t-sep">·</span></span>
+    <span class="ticker-item">❓ Live Q&A with Miss Sharon <span class="t-sep">·</span></span>
+    <span class="ticker-item">📹 Recording Available <span class="t-sep">·</span></span>
+    <span class="ticker-item">✅ 21 Years Experience <span class="t-sep">·</span></span>
+    <span class="ticker-item">🎁 Free Toolkit Included <span class="t-sep">·</span></span>
+    <span class="ticker-item">🎓 Free for UK Parents <span class="t-sep">·</span></span>
+    <span class="ticker-item">📋 Practical Exam Tips <span class="t-sep">·</span></span>
+    <span class="ticker-item">🏆 11+ · GCSE · SAT <span class="t-sep">·</span></span>
+    <span class="ticker-item">💬 Join WhatsApp Community <span class="t-sep">·</span></span>
+    <span class="ticker-item">❓ Live Q&A with Miss Sharon <span class="t-sep">·</span></span>
+    <span class="ticker-item">📹 Recording Available <span class="t-sep">·</span></span>
+    <span class="ticker-item">✅ 21 Years Experience <span class="t-sep">·</span></span>
+    <span class="ticker-item">🎁 Free Toolkit Included <span class="t-sep">·</span></span>
+  </div>
+</div>
+
+<!-- ══════════ PAIN SECTION ══════════ -->
+<section class="sec pain-sec">
+  <div class="mw pain-inner">
+    <div>
+      <div class="sec-eyebrow"><span class="sec-eyebrow-line"></span>Does This Sound Like You?<span class="sec-eyebrow-line"></span></div>
+      <h2 class="sec-h2">You're Doing Everything Right —<br>But Still <em>Not Sure</em> If It's Enough</h2>
+      <p class="sec-body" style="margin-bottom:0">Many Nigerian parents in the UK feel the same. The school system here is different. The exams are different. And knowing exactly how to help your child — without adding more pressure — is genuinely hard.</p>
+      <div class="pain-questions">
+        <div class="pq-item"><span class="pq-icon">😟</span><div class="pq-text">You wonder: <span>"Am I pushing too hard — or not hard enough?"</span></div></div>
+        <div class="pq-item"><span class="pq-icon">🤷</span><div class="pq-text">You're not sure <span>what the UK exam system actually expects</span> from your child</div></div>
+        <div class="pq-item"><span class="pq-icon">📉</span><div class="pq-text">Your child's grades <span>aren't where they should be</span> and you don't know where the gap is</div></div>
+        <div class="pq-item"><span class="pq-icon">😰</span><div class="pq-text">Your child is <span>anxious about exams</span> and you don't know how to calm them down</div></div>
+        <div class="pq-item"><span class="pq-icon">⏰</span><div class="pq-text">You know <span>exams are coming fast</span> but you're not sure what to prioritise right now</div></div>
+      </div>
+    </div>
+    <div class="solution-card">
+      <div class="sol-eyebrow">This Webinar Solves All of That</div>
+      <div class="sol-h3">In 45 minutes, you'll have everything you need to support your child with confidence</div>
+      <div class="sol-items">
+        <div class="sol-item"><div class="sol-check">✓</div><div class="sol-tx"><strong>A clear revision plan</strong> you can set up with your child this weekend</div></div>
+        <div class="sol-item"><div class="sol-check">✓</div><div class="sol-tx"><strong>Proven strategies</strong> for 11+, GCSE and SAT — specific to UK school expectations</div></div>
+        <div class="sol-item"><div class="sol-check">✓</div><div class="sol-tx"><strong>Scripts to calm exam anxiety</strong> without adding pressure</div></div>
+        <div class="sol-item"><div class="sol-check">✓</div><div class="sol-tx"><strong>Signs to watch for</strong> that tell you your child needs extra support</div></div>
+        <div class="sol-item"><div class="sol-check">✓</div><div class="sol-tx"><strong>Live Q&A</strong> — ask Miss Sharon your specific questions directly</div></div>
+        <div class="sol-item"><div class="sol-check">✓</div><div class="sol-tx"><strong>Free parent toolkit PDF</strong> sent to every attendee after the session</div></div>
+      </div>
+      <a href="https://chat.whatsapp.com/YOUR_GROUP_LINK_HERE" class="sol-wa" target="_blank" rel="noopener">
+        💬 Join Free — Get Your Spot Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ WHAT YOU LEARN ══════════ -->
+<section class="sec learn-sec">
+  <div class="mw">
+    <div class="center">
+      <div class="sec-eyebrow"><span class="sec-eyebrow-line"></span>What You Will Learn<span class="sec-eyebrow-line"></span></div>
+      <h2 class="sec-h2">5 Things You'll Know<br>by the End of This <em>Free Session</em></h2>
+      <p class="sec-body">Practical. Actionable. Built for Nigerian parents navigating the UK school system.</p>
+    </div>
+    <div class="learn-grid">
+      <div class="learn-card">
+        <div class="learn-num">1</div>
+        <div>
+          <div class="learn-t">How the UK exam system really works</div>
+          <div class="learn-d">11+, GCSE, KS2 and KS3 — what each exam tests, what markers look for, and how to prepare for each one at home</div>
+        </div>
+      </div>
+      <div class="learn-card">
+        <div class="learn-num">2</div>
+        <div>
+          <div class="learn-t">How to spot the warning signs before it's too late</div>
+          <div class="learn-d">The early signals that your child is falling behind — and the simple interventions that close the gap quickly</div>
+        </div>
+      </div>
+      <div class="learn-card">
+        <div class="learn-num">3</div>
+        <div>
+          <div class="learn-t">Revision strategies that actually work for your child</div>
+          <div class="learn-d">Evidence-backed techniques matched to different learning styles — not generic advice you've already heard</div>
+        </div>
+      </div>
+      <div class="learn-card">
+        <div class="learn-num">4</div>
+        <div>
+          <div class="learn-t">How to manage exam anxiety at home — calmly</div>
+          <div class="learn-d">What to say, what not to say, and how to create an environment where your child feels safe to try and fail</div>
+        </div>
+      </div>
+      <div class="learn-card">
+        <div class="learn-num">5</div>
+        <div>
+          <div class="learn-t">How to build a weekly revision timetable</div>
+          <div class="learn-d">A step-by-step framework you and your child can fill in together — covering every subject, every week, without overwhelm</div>
+        </div>
+      </div>
+      <div class="learn-card">
+        <div class="learn-num">6</div>
+        <div>
+          <div class="learn-t">When to bring in professional support</div>
+          <div class="learn-d">How to know when tutoring is needed, what to look for in a good tutor, and how session reports keep you fully informed</div>
+        </div>
+      </div>
+    </div>
+    <div class="bonus-strip">
+      <div class="bonus-ic">🎁</div>
+      <div>
+        <div class="bonus-tag">Free Bonus for All Attendees</div>
+        <div class="bonus-title">The Exam Season Parent Toolkit — PDF Download</div>
+        <div class="bonus-desc">Every registered parent receives a free downloadable toolkit after the webinar. Includes a ready-to-use revision timetable template, an exam anxiety checklist, and subject-specific tips for 11+, GCSE and SAT. Valued at £25 — yours free for attending.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ WHO IS THIS FOR ══════════ -->
+<section class="sec who-sec">
+  <div class="mw">
+    <div class="center">
+      <div class="sec-eyebrow"><span class="sec-eyebrow-line"></span>Is This For You?<span class="sec-eyebrow-line"></span></div>
+      <h2 class="sec-h2">This Webinar Is <em>Specifically</em> For You If...</h2>
+    </div>
+    <div class="who-grid">
+      <div class="who-card">
+        <div class="who-check">✓</div>
+        <div>
+          <div class="who-t">You are a Nigerian parent living in the UK</div>
+          <div class="who-d">This session is designed specifically for the experience of raising children in the UK school system as a Nigerian family</div>
+        </div>
+      </div>
+      <div class="who-card">
+        <div class="who-check">✓</div>
+        <div>
+          <div class="who-t">Your child has exams in the next 1–4 months</div>
+          <div class="who-d">11+, GCSE, KS2 SATs or KS3 assessments — there is still time to make a real difference if you start now</div>
+        </div>
+      </div>
+      <div class="who-card">
+        <div class="who-check">✓</div>
+        <div>
+          <div class="who-t">You want practical advice — not vague tips</div>
+          <div class="who-d">This session is built around real strategies you can apply the same week, not general motivation or theory</div>
+        </div>
+      </div>
+      <div class="who-card">
+        <div class="who-check">✓</div>
+        <div>
+          <div class="who-t">Your child is anxious, unmotivated or disengaged</div>
+          <div class="who-d">We will cover how to reignite motivation and build confidence — even with a reluctant learner</div>
+        </div>
+      </div>
+      <div class="who-card">
+        <div class="who-check">✓</div>
+        <div>
+          <div class="who-t">You are not sure if your child needs a tutor</div>
+          <div class="who-d">We will help you make that decision clearly — with a simple framework for assessing your child's current level</div>
+        </div>
+      </div>
+      <div class="who-card">
+        <div class="who-check">✓</div>
+        <div>
+          <div class="who-t">You want to connect with other Nigerian parents in the UK</div>
+          <div class="who-d">Join our WhatsApp community and connect with hundreds of parents on the same journey as you</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section class="sec about-sec">
+  <div class="about-pat"></div>
+  <div class="about-glow"></div>
+  <div class="mw about-inner">
+    <div class="about-left">
+      <div class="about-eyebrow"><span class="about-eyebrow-line"></span>Your Host<span class="about-eyebrow-line"></span></div>
+      <h2 class="about-h2">Meet <em>Miss Sharon Ojo</em> —<br>21 Years in the Classroom,<br>Thousands of Students</h2>
+      <p class="about-body">Sharon Ojo is not just a tutor — she is a seasoned educator who has spent <strong>15 years transforming education in Nigeria</strong> and <strong>6 years working internationally</strong> across the UK and beyond. She has worked with students of different races, backgrounds and age groups — from early primary all the way through secondary — and she understands exactly what Nigerian children face in the UK school system.</p>
+      <p class="about-body">Today, Sharon works as a <strong>top exam prep tutor for Hiprep (UK)</strong> and as a <strong>tutor and educational content creator for Knyabi (Canada)</strong>. She is also the founder of Schoolhelphub — an international tutoring platform serving families across the UK, US, Canada and beyond.</p>
+      <div class="about-stats">
+        <div class="about-stat">
+          <div class="about-stat-num">21</div>
+          <div class="about-stat-label">Years teaching</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">1000+</div>
+          <div class="about-stat-label">Students supported</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">5+</div>
+          <div class="about-stat-label">Countries served</div>
+        </div>
+      </div>
+      <div class="about-platforms">
+        <span class="platform-pill">🇬🇧 Hiprep UK</span>
+        <span class="platform-pill">🇨🇦 Knyabi Canada</span>
+        <span class="platform-pill">🌍 Schoolhelphub Global</span>
+        <span class="platform-pill">🏫 TekLearn</span>
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="about-card">
+        <div class="about-card-header">
+          <div class="about-avatar">SO</div>
+          <div>
+            <div class="about-name">Miss Sharon Ojo</div>
+            <div class="about-role">Educator · Founder · Exam Prep Specialist</div>
+            <div class="about-verified">✓ Verified Educator · 21 Years Experience</div>
+          </div>
+        </div>
+        <div class="about-quote">
+          "I have spent 21 years watching children succeed when they are given the right support at the right time. This webinar is my way of giving Nigerian parents in the UK exactly that — for free."
+        </div>
+        <div class="about-creds">
+          <div class="about-cred">
+            <span class="cred-icon">🏆</span>
+            <div class="cred-text"><strong>Top Exam Prep Tutor</strong> for Hiprep UK — specialising in 11+, GCSE and KS2/KS3 preparation for students across the UK</div>
+          </div>
+          <div class="about-cred">
+            <span class="cred-icon">📚</span>
+            <div class="cred-text"><strong>Educational Content Creator</strong> for Knyabi Canada — building engaging, student-centred learning resources for diverse learners</div>
+          </div>
+          <div class="about-cred">
+            <span class="cred-icon">🌍</span>
+            <div class="cred-text"><strong>15 years in Nigerian education</strong> + 6 years internationally — working with students across different races, cultures and academic backgrounds</div>
+          </div>
+          <div class="about-cred">
+            <span class="cred-icon">💡</span>
+            <div class="cred-text"><strong>Student-centred teaching philosophy</strong> — building not just knowledge, but critical thinking, creativity and confidence in every student</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ TESTIMONIALS ══════════ -->
+<section class="sec testi-sec">
+  <div class="mw">
+    <div class="center">
+      <div class="sec-eyebrow"><span class="sec-eyebrow-line"></span>What Parents Say<span class="sec-eyebrow-line"></span></div>
+      <h2 class="sec-h2">Nigerian Parents in the UK<br><em>Love</em> These Sessions</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <span class="qm">"</span>
+        <span class="stars">★★★★★</span>
+        <p class="testi-tx">Miss Sharon understands exactly what we go through as Nigerian parents here. <span class="highlight-txt">My daughter went from a predicted D to a B in her GCSE Maths</span> after we applied the strategies from the session. I wish I had found this earlier.</p>
+        <div class="testi-author">
+          <div class="t-av" style="background:linear-gradient(135deg,#005A32,#007A45)">AA</div>
+          <div><div class="t-name">Adaeze A.</div><div class="t-role">Nigerian Parent · Birmingham, UK · GCSE Student</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <span class="qm">"</span>
+        <span class="stars">★★★★★</span>
+        <p class="testi-tx">I did not understand how the 11+ worked at all. This session explained everything — the exam boards, the preparation strategy, what markers look for. <span class="highlight-txt">My son passed and got into his first-choice school.</span> I cannot thank Miss Sharon enough.</p>
+        <div class="testi-author">
+          <div class="t-av" style="background:linear-gradient(135deg,#FFCE2E,#E6B800);color:#003D22">BO</div>
+          <div><div class="t-name">Bimpe O.</div><div class="t-role">Nigerian Parent · London, UK · 11+ Student</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <span class="qm">"</span>
+        <span class="stars">★★★★★</span>
+        <p class="testi-tx">The exam anxiety section was a game changer. I did not realise how much pressure I was adding without knowing. <span class="highlight-txt">My son is calmer, more focused and actually enjoys studying now.</span> 100% recommend to every Nigerian parent in the UK.</p>
+        <div class="testi-author">
+          <div class="t-av" style="background:linear-gradient(135deg,#003D22,#005A32)">CI</div>
+          <div><div class="t-name">Chisom I.</div><div class="t-role">Nigerian Parent · Manchester, UK · Year 9 Student</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FINAL CTA ══════════ -->
+<section class="cta-sec">
+  <div class="cta-glow"></div>
+  <div class="cta-leaf"></div>
+  <div class="cta-leaf2"></div>
+  <div class="cta-warning">
+    <span class="cta-w-dot"></span>
+    ⏰ Spaces are limited — do not wait until they are gone
+  </div>
+  <h2 class="cta-h2">
+    Your Child's Exam Season<br>
+    Starts <em>Right Now.</em>
+  </h2>
+  <p class="cta-sub">Join our free WhatsApp community today. Get the webinar Zoom link, exam tips, free resources and connect with hundreds of Nigerian parents in the UK — all in one place.</p>
+  <div class="cta-actions">
+    <a href="https://chat.whatsapp.com/YOUR_GROUP_LINK_HERE" class="cta-wa-btn" target="_blank" rel="noopener">
+      💬 Join Our Free WhatsApp Community Now
+    </a>
+    <a href="mailto:schoolhelphub@gmail.com" class="cta-email">✉️ Or email us at schoolhelphub@gmail.com</a>
+    <p class="cta-note">Free to join · Leave anytime · Webinar Zoom link shared inside the group · Recording sent to all members</p>
+  </div>
+</section>
+
+<!-- ══════════ CONTACT STRIP ══════════ -->
+<div class="contact-strip">
+  <div class="cs-item">
+    <div class="cs-ic g">💬</div>
+    <div><div class="cs-label">WhatsApp</div><div class="cs-val"><a href="https://wa.me/2347043523555" target="_blank">+234 704 352 3555</a></div></div>
+  </div>
+  <div class="cs-ic y" style="display:flex;align-items:center;gap:9px;padding-right:0" >
+  </div>
+  <div class="cs-item">
+    <div class="cs-ic y">✉️</div>
+    <div><div class="cs-label">Email</div><div class="cs-val"><a href="mailto:schoolhelphub@gmail.com">schoolhelphub@gmail.com</a></div></div>
+  </div>
+  <div class="cs-item">
+    <div class="cs-ic g">🌍</div>
+    <div><div class="cs-label">Based</div><div class="cs-val">International · Serving UK, US & Beyond</div></div>
+  </div>
+</div>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="brand">
+      <div class="brand-logo">Schoolhelphub</div>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:schoolhelphub@gmail.com">Email Us</a>
+      <a href="https://wa.me/2347043523555" target="_blank">WhatsApp</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <p class="footer-copy">© 2025 Schoolhelphub. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+// Countdown — 21 days from now
+function tick(){
+  const target = new Date();
+  target.setDate(target.getDate() + 21);
+  const diff = target - new Date();
+  if(diff <= 0) return;
+  const d = Math.floor(diff/(1000*60*60*24));
+  const h = Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+  const m = Math.floor((diff%(1000*60*60))/(1000*60));
+  const s = Math.floor((diff%(1000*60))/1000);
+  document.getElementById('cd-d').textContent = String(d).padStart(2,'0');
+  document.getElementById('cd-h').textContent = String(h).padStart(2,'0');
+  document.getElementById('cd-m').textContent = String(m).padStart(2,'0');
+  document.getElementById('cd-s').textContent = String(s).padStart(2,'0');
+}
+tick();
+setInterval(tick,1000);
+</script>
+</body>
+</html>
